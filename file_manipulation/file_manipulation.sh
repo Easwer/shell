@@ -38,7 +38,7 @@ if [[ -r $input ]]; then
 	while IFS= read -r line
 	do
 		# Spliting contents of line based on delimiter "|"
-		contents=(${line//|/ })
+		IFS='|' read -ra contents <<<"$line"
 		echo "350,${contents[1]},${contents[5]},${contents[7]},${contents[38]}" >> $output
 	done < "$inputTmp"
 else
