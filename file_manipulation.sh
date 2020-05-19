@@ -1,9 +1,11 @@
 #!/bin/bash
-###################################################################
-# Script Name	:   
-# Description	:   
-# Author       	:   
-###################################################################
+
+########################################################################
+# Script Name	:   File manipulation
+# Description	:   File to read an input from txt and output as CSV.
+# Author       	:   Easwer AP
+########################################################################
+
 logfile=/Drive1/playground/shell/shell.log
 input=/Drive1/playground/shell/input.txt
 output=/Drive1/playground/shell/output.csv
